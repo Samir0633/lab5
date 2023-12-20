@@ -1,0 +1,11 @@
+from scipy.optimize import fsolve
+import numpy as np
+
+def equation(x):
+    return np.log(x) - np.sqrt(x)
+
+initial_guess = 0.5
+
+result = fsolve(equation, initial_guess)
+
+print("Tənliklərin təqribi həlli:", result)
